@@ -127,16 +127,3 @@ IB-Tune for Mean-Field LLMs.md                                # Project document
 
 ---
 
-## 📖 Citation
-
-If you find this repository helpful in your research, please cite:
-
-```bibtex
-@article{mi2025mf,
-  title={MF-LLM: Simulating Collective Decision Dynamics via a Mean-Field Large Language Model Framework},
-  author={Mi, Qirui and Yang, Mengyue and Yu, Xiangning and Zhao, Zhiyu and Deng, Cheng and An, Bo and Zhang, Haifeng and Chen, Xu and Wang, Jun},
-  journal={arXiv preprint arXiv:2504.21582},
-  year={2025}
-}
-```
-
