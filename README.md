@@ -41,6 +41,7 @@ Set `args.a_MODEL_NAME` and `args.mf_MODEL_NAME` accordingly.
 Run the MF‑LLM simulation and generate agent-level decision sequences:
 
 ```bash
+cd mf_llm
 python scripts/run_mf_batch.py \
   --alg "mf" \
   --comment_n 300 \
@@ -98,6 +99,7 @@ MF‑LLM supports automatic evaluation of agent trajectories via GPT models.
 3. Run the evaluation script:
 
    ```bash
+   cd mf_llm
    python evaluate/evaluate_gpt_batch.py
    ```
 
