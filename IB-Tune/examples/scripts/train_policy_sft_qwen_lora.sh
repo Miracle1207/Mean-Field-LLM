@@ -5,17 +5,17 @@ openrlhf.cli.train_mf \
    --alg policy_on_mf
    --have_mf_model
    --max_len 2048 \
-   --dataset /mnt/nasdata/qirui/dataset/rumdect/Weibo/train   \
+   --dataset /your/path/to/data/rumdect/Weibo/train   \
    --input_key question \
    --output_key response \
    --train_batch_size 256 \
    --micro_train_batch_size 8 \
    --max_samples 500000 \
-   --pretrain /mnt/nasdata/qirui/language_model/Qwen2-1.5B-Instruct
-   --save_path language_model/qwen2-1.5B-policy\
-   --ckpt_path ckpt/policy/checkpoints_sft/
+   --pretrain /your/path/to/Qwen2-1.5B-Instruct
+   --save_path /your/path/to/output/Qwen2-1.5B-policy\
+   --ckpt_path /your/path/to/checkpoints/
    --save_steps 10 \
-   --train_data_n 4 \
+   --train_data_n 400 \
    --logging_steps 1 \
    --eval_steps -1 \
    --zero_stage 2 \

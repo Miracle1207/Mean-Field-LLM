@@ -4,7 +4,7 @@ import numpy as np
 import random
 import torch
 from datetime import datetime
-from mean_field_utils import calculate_log_probs, calculate_mean_field, build_state, build_prompt
+from mf_llm.mean_field_utils import calculate_log_probs, calculate_mean_field, build_state, build_prompt
 
 seed_num = 46
 # 设置随机种子与设备
@@ -478,8 +478,7 @@ if __name__ == "__main__":
     ALG = args.alg  #  'hot', 'mf', 'gpt' 等
     simulation_start = args.simulation_start
     use_vllm = False
-    MODEL_PATH = "/mnt/nasdata/qirui/language_model/"
-    # MODEL_PATH = ""  # todo: 准备你的 LLM 地址
+    MODEL_PATH = ""  # todo: fill your LLM path
     file_name = args.file_name
     model_type = args.model
     batch_size = args.batch_size
@@ -489,8 +488,8 @@ if __name__ == "__main__":
         mf_MODEL_NAME = f"Qwen2-{model_type}-Instruct"
     elif ALG == 'mf' or ALG == 'mf_w_key' or ALG == 'mf_w_inter':
         if model_type == "1.5B":
-            a_MODEL_NAME = "qwen2-1.5B-policy-0324-prompt"
-            mf_MODEL_NAME = "qwen2-1.5B-mf-0319"
+            a_MODEL_NAME = "qwen2-1.5B-policy-0324-prompt"  # or "Qwen2-1.5B-Instruct"
+            mf_MODEL_NAME = "qwen2-1.5B-mf-0319"    # or "Qwen2-1.5B-Instruct"
         elif model_type == "7B":
             a_MODEL_NAME = f"Qwen2-{model_type}-Instruct"
             mf_MODEL_NAME = f"Qwen2-{model_type}-Instruct"

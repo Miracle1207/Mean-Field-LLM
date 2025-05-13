@@ -5,8 +5,8 @@ from collections import Counter
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-MODEL_PATH = "" # todo
-MODEL_NAME = "" # todo: you need load a pretrain LLM as initial model; For example, Qwen2-1.5B
+MODEL_PATH = "XXX" # todo
+MODEL_NAME = "Qwen2-1.5B-Instruct" # todo: you need load a pretrain LLM as initial model; For example, Qwen2-1.5B
 model_name = MODEL_PATH + MODEL_NAME
 initial_model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16)
 # from collections import Counter

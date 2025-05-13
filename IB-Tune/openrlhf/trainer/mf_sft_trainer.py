@@ -85,9 +85,8 @@ class MFTrainer(ABC):
             import wandb
             import stat
             self._wandb = wandb
-        
-            wandb_dir = "/wandb_logs"
 
+            wandb_dir = os.path.abspath("./wandb_logs")
             # 检查目录是否存在
             if not os.path.exists(wandb_dir):
                 try:

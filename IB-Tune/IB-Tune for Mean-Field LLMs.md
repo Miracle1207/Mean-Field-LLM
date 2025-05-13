@@ -15,7 +15,7 @@ Please follow the [OpenRLHF installation instructions](https://github.com/OpenRL
 
 ## 🧠 Step 1: Fine-Tune the Mean-Field Model
 
-1. **Configure the base LLM** in
+1. **Configure the initial LLM** in
    `openrlhf/trainer/mean_field_utils/mean_field_loss.py`:
 
    ```python

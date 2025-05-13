@@ -152,5 +152,4 @@ For fine-tuning details and training scripts, refer to:
 * 🔧 [IB-Tune: Fine-Tuning Framework for MF-LLMs →](../IB-Tune/IB-Tune for Mean-Field LLMs.md)
   A modular, LoRA-based fine-tuning framework for both the mean-field and policy modules in MF-LLM.
 
----
 
