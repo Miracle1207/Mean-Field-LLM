@@ -2,7 +2,7 @@
 
 This repository implements **MF‑LLM**, a simulation framework for modeling large-scale collective behavior using **Mean-Field Large Language Models**. It supports trajectory generation for heterogeneous agents under diverse scenarios, enabling the study of population decision dynamics and policy interventions.
 
-The framework also supports **GPT-based evaluation** of generated behaviors and integrates with our fine-tuning toolkit **[IB-Tune](/IB-Tune/IB-Tune for Mean-Field LLMs.md)** for efficient LoRA-based model adaptation.
+The framework also supports **GPT-based evaluation** of generated behaviors and integrates with our fine-tuning toolkit **[IB-Tune](IB-Tune/IB-Tune for Mean-Field LLMs.md)** for efficient LoRA-based model adaptation.
 
 ---
 
