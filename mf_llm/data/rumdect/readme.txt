@@ -1,0 +1,3 @@
+
+- Weibo Data (Weibo.txt): This corpus contains 4664 labeled events in total. Each line contains one event with ids of relevent posts with format: event_id, label, post_ids. For the labels, the value is 1 if the event is a rumor, and is 0 otherwise. We also release the content of all the posts in json format which are saved in the ./Weibo directory, where each file is named as event_id.json, corresponding to individual event.
+  ** Note that we do not explicitly produce claim for each Weibo event since we directly collect the events as propagation threads from Sina community management center, and the source post (the first post) of each event can be considered as the main claim.
