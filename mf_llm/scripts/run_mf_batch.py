@@ -98,7 +98,7 @@ def run_simulation(tweets, comment_n, tokenizer, a_model,mf_model,batch_size=8, 
         client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"), )
     elif "ds" in model_type:
         from openai import OpenAI
-        client = OpenAI(api_key="sk-097add06f0234bc4893e1df48b666c47", base_url="https://api.deepseek.com")
+        client = OpenAI(api_key="sk-XXX", base_url="https://api.deepseek.com")
     elif "DeepSeek" in model_type:
         from openai import OpenAI
         client = OpenAI(
